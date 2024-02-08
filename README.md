@@ -36,9 +36,12 @@
 
 
 ```
-![download (1)](https://github.com/PlamediD/slideshow-app/assets/87151146/c3650239-8903-4ba6-8ad4-8c75c17acc1e)
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-![download](https://github.com/PlamediD/slideshow-app/assets/87151146/40f183a4-a6ba-479f-8310-62ce62c84994)
+* [visual studio code](![download (1)](https://github.com/PlamediD/slideshow-app/assets/87151146/5939127e-b357-48dc-86af-b842411339cb))
+* [html](![download (1)](https://github.com/PlamediD/slideshow-app/assets/87151146/c3650239-8903-4ba6-8ad4-8c75c17acc1e))
+* [CSS](![download (3)](https://github.com/PlamediD/slideshow-app/assets/87151146/620a5a5c-99de-4b2d-864c-d47da7b6dd3f))
+* [JavaScript](![download (2)](https://github.com/PlamediD/slideshow-app/assets/87151146/c17e314c-1712-4b94-ac90-ceaee96bc35b))
 
 ```
 
