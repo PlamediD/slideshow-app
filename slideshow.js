@@ -1,42 +1,42 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('.image-container img');
+    const slides = document.querySelectorAll('.slide');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     const galleryContainer = document.querySelector('.gallery-container');
     let currentIndex = 0;
     let slideInterval;
 
-    // Function to show the current image
-    function showImage(index) {
-        images.forEach((img, i) => {
+    // Function to show the current slide
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
             if (i === index) {
-                img.style.display = 'block'; // Show the current image
+                slide.style.display = 'flex'; // Show the current slide
             } else {
-                img.style.display = 'none'; // Hide other images
+                slide.style.display = 'none'; // Hide other slides
             }
         });
     }
 
     // Event listener for the next button
     nextBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
     });
 
     // Event listener for the previous button
     prevBtn.addEventListener('click', function () {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(currentIndex);
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
     });
 
     // Keyboard navigation
     document.addEventListener('keydown', function (event) {
         if (event.key === 'ArrowRight') {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
         } else if (event.key === 'ArrowLeft') {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
         }
     });
 
@@ -49,16 +49,16 @@ document.addEventListener('DOMContentLoaded', function () {
         startSlideshow();
     });
 
-    // Automatic transition to the next image every 3 seconds
+    // Automatic transition to the next slide every 3 seconds
     function startSlideshow() {
         slideInterval = setInterval(function () {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
         }, 3000);
     }
 
-    // Show the initial image
-    showImage(currentIndex);
+    // Show the initial slide
+    showSlide(currentIndex);
 
     // Start the slideshow
     startSlideshow();
