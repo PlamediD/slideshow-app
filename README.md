@@ -50,8 +50,44 @@ this project encapsulates the memories that shaped my 2024. Explore the visual n
 
 A list of proposed features (and known issues):
 
-***Coming soon***
 
+1. Implement image preloading to ensure a smooth transition between images, especially for users with slower internet connections.
+Thumbnail Navigation:
+
+2. Include thumbnail images below the slideshow for quick navigation. Clicking on a thumbnail could display the corresponding image in the main slideshow.
+Transition Effects:
+
+Experiment with different transition effects between images, such as fade, slide, or zoom. This can add a touch of elegance to your slideshow.
+Swipe Gestures:
+
+Add touch/swipe gestures for mobile users to navigate through images easily.
+Custom Styling:
+
+Enhance the overall visual appeal by refining the styling. Consider using a modern color scheme, custom fonts, and subtle animations.
+Image Loading Spinner:
+
+Display a loading spinner while images are being loaded, especially if the images are large.
+Image Optimization:
+
+Optimize your images for web by compressing them without compromising too much on quality. This can improve page loading times.
+Accessibility:
+
+Ensure your website is accessible. Add alternative text (alt text) for images, so users with visual impairments can understand the content.
+Navigation Arrows Visibility:
+
+Make the navigation arrows (prev and next) more visually prominent and ensure they are easily accessible.
+Dynamic Content:
+
+Consider pulling image data dynamically from a database or external source to make it easier to update and maintain.
+Social Media Integration:
+
+Add social media sharing buttons to allow users to share their favorite images easily.
+Lightbox Modal:
+
+Implement a lightbox modal to provide a more immersive experience when viewing images.
+Feedback for Users:
+
+Add visual cues or feedback to let users know that they can interact with the slideshow (e.g., changing cursor on hover).
 
 
 
