@@ -36,7 +36,9 @@
 
 
 ```
+![download (1)](https://github.com/PlamediD/slideshow-app/assets/87151146/c3650239-8903-4ba6-8ad4-8c75c17acc1e)
 
+![download](https://github.com/PlamediD/slideshow-app/assets/87151146/40f183a4-a6ba-479f-8310-62ce62c84994)
 
 ```
 
