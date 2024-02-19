@@ -45,7 +45,24 @@ body {
     overflow: hidden;
     height: 500px;
 }
-/* Add this style to your existing CSS */
+
+
+.navigation-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+
 
 .caption {
     position: absolute;

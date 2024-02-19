@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
    // Update this part of your existing JavaScript
 
 // Function to show the current slide
+// Update this part of your existing JavaScript
 function showSlide(index) {
     slides.forEach((slide, i) => {
         if (i === index) {
@@ -19,7 +20,29 @@ function showSlide(index) {
         }
     });
     updateCaption(index);
+    updateNavigationDots(index);
 }
+
+// Add this function for updating navigation dots
+function updateNavigationDots(index) {
+    const navigationDots = document.querySelector('.navigation-dots');
+    navigationDots.innerHTML = ''; // Clear existing dots
+
+    slides.forEach((slide, i) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.addEventListener('click', () => {
+            currentIndex = i;
+            showSlide(currentIndex);
+        });
+        navigationDots.appendChild(dot);
+
+        if (i === index) {
+            dot.style.backgroundColor = '#3498db'; // Highlight the current dot
+        }
+    });
+}
+
 
 // Function to update the caption
 function updateCaption(index) {
