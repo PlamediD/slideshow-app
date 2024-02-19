@@ -7,15 +7,28 @@ document.addEventListener('DOMContentLoaded', function () {
     let slideInterval;
 
     // Function to show the current slide
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            if (i === index) {
-                slide.style.display = 'flex'; // Show the current slide
-            } else {
-                slide.style.display = 'none'; // Hide other slides
-            }
-        });
-    }
+   // Update this part of your existing JavaScript
+
+// Function to show the current slide
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.style.display = 'flex'; // Show the current slide
+        } else {
+            slide.style.display = 'none'; // Hide other slides
+        }
+    });
+    updateCaption(index);
+}
+
+// Function to update the caption
+function updateCaption(index) {
+    const captions = document.querySelectorAll('.caption');
+    captions.forEach((caption, i) => {
+        caption.style.display = i === index ? 'block' : 'none';
+    });
+}
+
 
     // Event listener for the next button
     nextBtn.addEventListener('click', function () {

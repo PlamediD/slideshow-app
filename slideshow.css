@@ -45,6 +45,19 @@ body {
     overflow: hidden;
     height: 500px;
 }
+/* Add this style to your existing CSS */
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
 
 .image-details {
     display: flex;
