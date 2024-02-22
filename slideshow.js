@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.querySelector('.next-btn');
     const galleryContainer = document.querySelector('.gallery-container');
     const fullscreenBtn = document.querySelector('.fullscreen-btn');
+    const navigationDots = document.querySelector('.navigation-dots');
     let currentIndex = 0;
     let slideInterval;
     let isFullscreen = false;
@@ -31,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to update navigation dots
     function updateNavigationDots(index) {
-        const navigationDots = document.querySelector('.navigation-dots');
         navigationDots.innerHTML = ''; // Clear existing dots
 
         slides.forEach((slide, i) => {
