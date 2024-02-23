@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const galleryContainer = document.querySelector('.gallery-container');
     const fullscreenBtn = document.querySelector('.fullscreen-btn');
     const navigationDots = document.querySelector('.navigation-dots');
+    const autoplayBtn = document.querySelector('.autoplay-btn');
     let currentIndex = 0;
     let slideInterval;
     let isFullscreen = false;
+    let isAutoplayOn = true;
 
     // Function to show the current slide
     function showSlide(index) {
@@ -106,6 +108,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for fullscreen button
     fullscreenBtn.addEventListener('click', toggleFullscreen);
 
+    // Event listener for autoplay button
+    autoplayBtn.addEventListener('click', function () {
+        isAutoplayOn = !isAutoplayOn;
+        autoplayBtn.textContent = `Autoplay: ${isAutoplayOn ? 'On' : 'Off'}`;
+
+        if (isAutoplayOn) {
+            startSlideshow();
+        } else {
+            clearInterval(slideInterval);
+        }
+    });
+
     // Function to toggle fullscreen mode
     function toggleFullscreen() {
         if (!isFullscreen) {
@@ -134,13 +148,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Automatic transition to the next slide every 3 seconds
+    // Automatic transition to the next slide every 3 seconds
     function startSlideshow() {
-        slideInterval = setInterval(function () {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }, 3000);
+        if (isAutoplayOn) {
+            clearInterval(slideInterval); // Clear existing interval
+            slideInterval = setInterval(function () {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }, 3000);
+        }
     }
-
 
 
     // Show the initial slide
@@ -148,5 +165,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Start the slideshow
     startSlideshow();
-
 });
