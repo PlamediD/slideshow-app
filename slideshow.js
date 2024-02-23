@@ -49,6 +49,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Add an event listener for the Randomize button
+    const randomizeBtn = document.querySelector('.randomize-btn');
+    randomizeBtn.addEventListener('click', function () {
+        // Shuffle the slides array
+        const shuffledSlides = Array.from(slides);
+        for (let i = shuffledSlides.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledSlides[i], shuffledSlides[j]] = [shuffledSlides[j], shuffledSlides[i]];
+        }
+
+        // Update the slides with the shuffled order
+        slides.forEach((slide, index) => {
+            slide.parentNode.insertBefore(shuffledSlides[index], slide.nextSibling);
+        });
+
+        // Update the currentIndex to reflect the new order
+        currentIndex = shuffledSlides.indexOf(slides[currentIndex]);
+
+        // Show the current (shuffled) slide
+        showSlide(currentIndex);
+    });
+
     // Event listener for the next button
     nextBtn.addEventListener('click', function () {
         currentIndex = (currentIndex + 1) % slides.length;
@@ -119,9 +141,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000);
     }
 
+
+
     // Show the initial slide
     showSlide(currentIndex);
 
     // Start the slideshow
     startSlideshow();
+
 });
