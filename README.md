@@ -43,7 +43,9 @@ this project encapsulates the memories that shaped my 2024. Explore the visual n
 
 
 ## Usage
-***Images Coming soon***
+![slideshow1](https://github.com/PlamediD/slideshow-app/assets/87151146/17596387-83ce-4fe7-a3a5-3c9bc5f22602)
+![slideshow2](https://github.com/PlamediD/slideshow-app/assets/87151146/9dca9d46-b910-4e50-bec4-e32aa4fba084)
+
 
 
 ## Roadmap
