@@ -96,14 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Pause on hover
-    galleryContainer.addEventListener('mouseenter', function () {
-        clearInterval(slideInterval);
-    });
-
-    galleryContainer.addEventListener('mouseleave', function () {
-        startSlideshow();
-    });
 
     // Event listener for fullscreen button
     fullscreenBtn.addEventListener('click', toggleFullscreen);
@@ -147,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
         isFullscreen = !isFullscreen;
     }
 
-    // Automatic transition to the next slide every 3 seconds
     // Automatic transition to the next slide every 3 seconds
     function startSlideshow() {
         if (isAutoplayOn) {
