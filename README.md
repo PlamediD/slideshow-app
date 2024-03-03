@@ -50,21 +50,26 @@ this project encapsulates the memories that shaped my 2024. Explore the visual n
 
 ## Roadmap
 
-A list of proposed features (and known issues):
+
+### Features: 
+1. Slideshow functionality: Allows users to navigate through images using previous and next buttons.
+2. Automatic slideshow: Provides an option to start an automatic slideshow with a customizable interval.
+3. Autoplay toggle: Enables users to toggle the automatic slideshow feature on and off.
+4. Randomize button: Allows users to shuffle the order of images for a randomized viewing experience.
+5. Fullscreen mode: Provides a fullscreen button for users to view images in fullscreen mode.
+6. Navigation dots: Displays navigation dots at the bottom of the gallery to indicate the current slide and allow users to navigate directly to specific slides.
+7. Image captions: Shows captions for each image to provide context or additional information.
+8. Responsive design: Ensures the gallery layout adjusts gracefully to different screen sizes for optimal viewing experience.
+9. Keyboard navigation: Supports keyboard navigation for users to navigate through images using arrow keys.
+10. Accessibility: Strives to adhere to accessibility guidelines to ensure users of all abilities can access and enjoy the image gallery.
+
+### A list of proposed features (and known issues):
 
 
 1. Implement image preloading to ensure a smooth transition between images, especially for users with slower internet connections.
-
-
 2. Include thumbnail images below the slideshow for quick navigation. Clicking on a thumbnail could display the corresponding image in the main slideshow.
-
-
 3. Enhance the overall visual appeal by refining the styling. Consider using a modern color scheme, custom fonts, and subtle animations.
-
-
 4. Consider pulling image data dynamically from a database or external source to make it easier to update and maintain.
-
-
 5. Add social media sharing buttons to allow users to share their favorite images easily.
 
 
