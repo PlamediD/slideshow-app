@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/PlamediD/slideshowapp">
-    <img src="" alt="Logo" width="80" height="80">
+    
   </a>
 
   <h3 align="center">A simple website to display pictures. </h3>
